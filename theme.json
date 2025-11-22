@@ -630,25 +630,25 @@
 					"bottom": {
 						"color": "var(--wp--preset--color--custom-h-1-h-3)",
 						"style": "solid",
-						"width": "15px"
+						"width": "5px"
 					},
 					"color": null,
 					"left": {
 						"color": "var(--wp--preset--color--custom-h-1-h-3)",
 						"style": "solid",
-						"width": "15px"
+						"width": "5px"
 					},
 					"radius": "0px",
 					"right": {
 						"color": "var(--wp--preset--color--custom-h-1-h-3)",
 						"style": "solid",
-						"width": "15px"
+						"width": "5px"
 					},
 					"style": null,
 					"top": {
 						"color": "var(--wp--preset--color--custom-h-1-h-3)",
 						"style": "solid",
-						"width": "15px"
+						"width": "5px"
 					},
 					"width": null
 				},

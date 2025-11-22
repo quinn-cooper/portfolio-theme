@@ -1,0 +1,26 @@
+<?php
+// This file is generated. Do not modify it manually.
+return array(
+	'portfolio-blocks' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'portfolio-blocks/portfolio-blocks',
+		'version' => '0.1.0',
+		'title' => 'Portfolio Blocks',
+		'category' => 'text',
+		'icon' => 'block-default',
+		'description' => 'Custom blocks for Quinnful Designs portfolio site.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'textdomain' => 'portfolio-blocks',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	)
+);

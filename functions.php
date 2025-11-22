@@ -25,4 +25,8 @@ function portfoliotheme_enqueue_styles() {
 add_action('wp_enqueue_scripts', 'portfoliotheme_enqueue_styles');
 
 // Register CPT
-require get_theme_file_path() . '/inc/cpt-taxonomies.php';
+require get_theme_file_path() . '/inc/cpt.php';
+
+
+// Require portfolio-blocks
+require get_theme_file_path() . '/portfolio-blocks/portfolio-blocks.php';
