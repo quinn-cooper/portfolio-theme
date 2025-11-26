@@ -1,11 +1,19 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:post-title {"textAlign":"center"} /-->
+<!-- wp:group {"tagName":"article","metadata":{"name":"Article"},"layout":{"type":"constrained"}} -->
+<article class="wp-block-group"><!-- wp:post-title {"textAlign":"center"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
 <main class="wp-block-group"><!-- wp:post-featured-image /-->
 
 <!-- wp:post-content /--></main>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","label":"Previous","arrow":"arrow"} /-->
+
+<!-- wp:post-navigation-link {"arrow":"arrow"} /--></div>
+<!-- /wp:group --></article>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

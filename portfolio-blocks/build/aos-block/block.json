@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hostel-blocks/aos-block",
+  "version": "0.1.0",
+  "title": "AOS Block",
+  "category": "widgets",
+  "icon": "move",
+  "description": "An AOS block for the West Coast Hostels website.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "animation": {
+      "type": "string",
+      "default": "fade-up"
+    }
+  },
+  "textdomain": "aos-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "portfolio-blocks/icon-picker",
+  "version": "0.1.0",
+  "title": "Icon Picker",
+  "category": "media",
+  "icon": "color-picker",
+  "description": "Icon picker for displaying tech skills",
+  "example": {},
+  "keywords": [
+    "icons",
+    "skills",
+    "portfolio"
+  ],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "anchor": true,
+    "align": false
+  },
+  "textdomain": "icon-picker",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

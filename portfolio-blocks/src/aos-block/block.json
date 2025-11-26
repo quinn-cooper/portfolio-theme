@@ -1,20 +1,27 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "portfolio-blocks/portfolio-blocks",
+	"name": "hostel-blocks/aos-block",
 	"version": "0.1.0",
-	"title": "Portfolio Blocks",
-	"category": "text",
-	"icon": "block-default",
-	"description": "Custom blocks for Quinnful Designs portfolio site.",
+	"title": "AOS Block",
+	"category": "widgets",
+	"icon": "move",
+	"description": "An AOS block for the West Coast Hostels website.",
 	"example": {},
 	"supports": {
 		"html": false
 	},
-	"textdomain": "portfolio-blocks",
+
+	"attributes": {
+		"animation": {
+			"type": "string",
+			"default": "fade-up"
+		}
+	},
+
+	"textdomain": "aos-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"render": "file:./render.php",
 	"viewScript": "file:./view.js"
 }
