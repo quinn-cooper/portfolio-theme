@@ -41,6 +41,13 @@ function portfoliotheme_enqueue_scripts() {
         true //  load in footer
     );
 
+    wp_enqueue_script('main-js',
+        get_theme_file_uri('/assets/js/main.js'),
+        array(), //  dependencies
+        '1.0', //  version
+        true //  load in footer
+    );
+
     // Initialize AOS
     // Only set to false while testing; change to true once it's working
     wp_add_inline_script('aos-js', 

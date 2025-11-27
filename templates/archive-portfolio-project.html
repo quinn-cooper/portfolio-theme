@@ -2,22 +2,27 @@
 <div class="wp-block-group"><!-- wp:template-part {"slug":"header","tagName":"header"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:query-title {"type":"archive","textAlign":"center","level":2,"showPrefix":false} /-->
+<!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false} /-->
 
-<!-- wp:query {"queryId":3,"query":{"perPage":10,"pages":0,"offset":0,"postType":"portfolio-project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"layout":{"type":"default"}} -->
-<div class="wp-block-query"><!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p>No projects found</p>
+<!-- wp:group {"metadata":[],"layout":{"type":"constrained","contentSize":"75rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Take a look at what I’ve built! These projects reflect my passion for creating functional interfaces and memorable designs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:hostel-blocks/aos-block {"animation":"fade-right"} -->
+<div data-aos="fade-right" class="wp-block-hostel-blocks-aos-block"><!-- wp:query {"queryId":3,"query":{"perPage":10,"pages":0,"offset":0,"postType":"portfolio-project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"layout":{"type":"default"}} -->
+<div class="wp-block-query"><!-- wp:query-no-results {"style":{"typography":{"fontSize":"1.5rem"}}} -->
+<!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results.","style":{"typography":{"fontSize":"1.3rem"}}} -->
+<p class="has-text-align-center" style="font-size:1.3rem">No projects found</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results -->
 
-<!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:post-featured-image {"isLink":true,"style":{"border":{"top":{"width":"3px","color":"var:preset|color|custom-h-1-h-3"},"right":{"width":"3px","color":"var:preset|color|custom-h-1-h-3"},"bottom":{"color":"var:preset|color|custom-h-1-h-3","width":"0px","style":"none"},"left":{"width":"3px","color":"var:preset|color|custom-h-1-h-3"}}}} /-->
+<!-- wp:post-template {"style":{"border":{"width":"0px","style":"none"},"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
+<!-- wp:group {"style":{"border":{"radius":"15px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-radius:15px"><!-- wp:post-featured-image {"isLink":true,"sizeSlug":"medium-large","align":"center","style":{"border":{"radius":{"topLeft":"15px","topRight":"15px","bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"3px"},"right":{"width":"3px"},"bottom":{"color":"var:preset|color|custom-h-1-h-3","width":"0px","style":"none"},"left":{"width":"3px"}}}} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"10px","bottom":"10px","left":"10px","right":"10px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0px"},"dimensions":{"minHeight":""},"border":{"width":"3px"}},"backgroundColor":"custom-accents","borderColor":"custom-h-1-h-3","layout":{"type":"default"}} -->
-<div class="wp-block-group has-border-color has-custom-h-1-h-3-border-color has-custom-accents-background-color has-background" style="border-width:3px;margin-top:0;margin-bottom:0;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px"><!-- wp:post-title {"textAlign":"center","level":3,"isLink":true,"style":{"spacing":{"padding":{"right":"0","left":"0"},"margin":{"right":"0","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|custom-h-1-h-3"},":hover":{"color":{"text":"var:preset|color|custom-body-text"}}}}}} /--></div>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"10px","bottom":"10px","left":"10px","right":"10px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0px"},"dimensions":{"minHeight":""},"border":{"radius":{"bottomLeft":"15px","bottomRight":"15px"},"width":"0px","style":"none"}},"backgroundColor":"custom-buttons-links","layout":{"type":"default"}} -->
+<div class="wp-block-group has-custom-buttons-links-background-color has-background" style="border-style:none;border-width:0px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;margin-top:0;margin-bottom:0;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px"><!-- wp:post-title {"textAlign":"center","isLink":true,"style":{"spacing":{"padding":{"right":"0","left":"0"},"margin":{"right":"0","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|custom-background"},":hover":{"color":{"text":"var:preset|color|black"}}}}}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
@@ -31,7 +36,12 @@
 <!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination --></div>
 <!-- /wp:group --></div>
-<!-- /wp:query --></main>
+<!-- /wp:query --></div>
+<!-- /wp:hostel-blocks/aos-block --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:block {"ref":433} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

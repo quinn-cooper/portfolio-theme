@@ -2,19 +2,21 @@
 <div class="wp-block-group"><!-- wp:template-part {"slug":"header","tagName":"header"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained","contentSize":"70rem"}} -->
+<!-- wp:post-title {"textAlign":"center"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group"><!-- wp:query {"queryId":5,"query":{"perPage":10,"pages":0,"offset":0,"postType":"portfolio-skill","order":"asc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"layout":{"type":"default"}} -->
-<div class="wp-block-query"><!-- wp:query-no-results -->
-<!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results.","fontSize":"medium"} -->
-<p class="has-text-align-center has-medium-font-size">No results found!</p>
+<div class="wp-block-query"><!-- wp:query-no-results {"fontSize":"medium"} -->
+<!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results.","style":{"typography":{"fontSize":"1.3rem"}}} -->
+<p class="has-text-align-center" style="font-size:1.3rem">No results found!</p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results -->
 
 <!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:post-title {"textAlign":"center","level":3} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}},"border":{"radius":"15px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-radius:15px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:post-title {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0"}}}} /-->
 
-<!-- wp:post-content /--></div>
+<!-- wp:post-content {"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-background"}}}},"textColor":"custom-background"} /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template --></div>
 <!-- /wp:query --></main>

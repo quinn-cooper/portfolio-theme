@@ -15,10 +15,112 @@ Update URI: false
 */
 
 
-/* .header-nav {
-    position: fixed;
-    top: 0;
+/*  */
+
+.projects-btn {
+    transition: transform 0.2s ease-in;
+}
+
+.projects-btn:hover {
+    transform: scale(1.1);
+}
+
+.wp-block-button__link .wp-element-button:hover {
+    background-color: #131a46;
+    color: #C7E1E1;
+}
+
+.lets-chat .wp-block-navigation-item__label {
+    color: #131a46;
+    background-color: #74b4b4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lets-chat .wp-block-navigation-item__label:hover {
+    background-color: #C7E1E1;
+}
+
+
+figure.wp-block-gallery.has-nested-images {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 42.2em) {
+    figure.wp-block-gallery.has-nested-images {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 42.0625em) {
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+        width: 100%;
+    }
+}
+
+h1 {
+    position: relative;
+    display: block;
+    width: fit-content;
+    cursor: default;
+    margin: 0 auto;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
     left: 0;
-    right: 0;
-    z-index: 50;
-} */
+    bottom: 5px;
+    height: 3px;
+    width: 0;
+    background-image: linear-gradient(rgb(199, 225, 225), rgb(134, 180, 180));
+    transition: ease-in-out 0.3s;
+}
+
+h1:hover::after {
+    width: 100%;
+}
+
+/* Skills */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border-radius: 4px;
+    background-color: #c5a4a0;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ----------------------------
+CONTACT FORM
+---------------------------- */
+
+.gfield_label {
+    color: #c5a4a0;
+}
+
+/* ----------------------------
+FOOTER
+-----------------------------*/
+.wp-block-social-links .wp-social-link svg {
+    width: 30px;
+    height: 30px;
+}
