@@ -15,49 +15,26 @@ Update URI: false
 */
 
 
-/*  */
+/* ----------------------------
+NAV MENU
+---------------------------- */
 
-.projects-btn {
-    transition: transform 0.2s ease-in;
-}
-
-.projects-btn:hover {
-    transform: scale(1.1);
-}
-
-.wp-block-button__link .wp-element-button:hover {
-    background-color: #131a46;
-    color: #C7E1E1;
-}
-
-.lets-chat .wp-block-navigation-item__label {
-    color: #131a46;
-    background-color: #74b4b4;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.lets-chat .wp-block-navigation-item__label:hover {
-    background-color: #C7E1E1;
-}
-
-
-figure.wp-block-gallery.has-nested-images {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 42.2em) {
-    figure.wp-block-gallery.has-nested-images {
-        flex-direction: row;
+@media (max-width: 37.4375rem) {
+    .wp-block-navigation__responsive-close {
+        background-color: #131a46;
+        color: #c5a4a0;
+        display: flex;
+        gap: 1.3rem;
+        justify-content: flex-end;
+        padding: 4rem;
+        border-radius: 0 0 15px 160px;
+        margin: 3rem;
     }
 }
 
-@media (max-width: 42.0625em) {
-    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
-        width: 100%;
-    }
-}
+/* ----------------------------
+HEADER
+---------------------------- */
 
 h1 {
     position: relative;
@@ -82,12 +59,81 @@ h1:hover::after {
     width: 100%;
 }
 
-/* Skills */
+/* ----------------------------
+BUTTONS
+---------------------------- */
+
+.wp-block-button {
+    transition: transform 0.2s ease-in;
+}
+
+.wp-block-button:hover {
+    transform: scale(1.1);
+}
+
+.projects-btn {
+    transition: transform 0.2s ease-in;
+}
+
+.projects-btn:hover {
+    transform: scale(1.1);
+}
+
+.contact-btn {
+    transition: transform 0.2s ease-in;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+}
+
+.lets-chat .wp-block-navigation-item__label {
+    color: #131a46;
+    background-color: #74b4b4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lets-chat .wp-block-navigation-item__label:hover {
+    background-color: #C7E1E1;
+}
+
+/* ----------------------------
+PROJECTS
+---------------------------- */
+
+figure.wp-block-gallery.has-nested-images {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 42.2em) {
+    figure.wp-block-gallery.has-nested-images {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 42.0625em) {
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 56.125em) {
+    .wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+    }
+}
+
+/* ----------------------------
+SKILLS
+---------------------------- */
 
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; 
+    gap: 1rem;
     align-items: center;
     list-style: none;
     padding-left: 0;
@@ -108,18 +154,23 @@ h1:hover::after {
     height: 20px;
 }
 
-
 /* ----------------------------
 CONTACT FORM
 ---------------------------- */
 
-.gfield_label {
-    color: #c5a4a0;
+input[type="submit"] {
+    transition: transform 0.2s ease-in;
+}
+
+input[type="submit"]:hover {
+    background-color: #C7E1E1;
+    transform: scale(1.1);
 }
 
 /* ----------------------------
 FOOTER
 -----------------------------*/
+
 .wp-block-social-links .wp-social-link svg {
     width: 30px;
     height: 30px;
