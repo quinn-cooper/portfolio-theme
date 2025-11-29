@@ -286,8 +286,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "55rem",
-			"wideSize": "65rem"
+			"contentSize": "50rem",
+			"wideSize": "62.5rem"
 		},
 		"shadow": {
 			"presets": [

@@ -25,8 +25,7 @@ return array(
 		'textdomain' => 'aos-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css',
-		'viewScript' => 'file:./view.js'
+		'style' => 'file:./style-index.css'
 	),
 	'icon-picker' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',

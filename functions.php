@@ -9,8 +9,8 @@ function portfoliotheme_enqueue_styles() {
         // get_stylesheet_uri is shortcut, as wp knows where to find it
 		get_stylesheet_uri(), 
 		array(),
-        // Some people may use date (09-01-25) or the version number; here I am telling wp to get version number of theme and output it here
-		wp_get_theme()->get( 'Version' ),
+		// wp_get_theme()->get( 'Version' ),
+        time(), //  for cache busting during development
 		'all'
 	);
 
@@ -38,13 +38,6 @@ function portfoliotheme_enqueue_scripts() {
         'https://unpkg.com/aos@2.3.1/dist/aos.js',
         array(), //  dependencies
         '2.3.1', //  version
-        true //  load in footer
-    );
-
-    wp_enqueue_script('main-js',
-        get_theme_file_uri('/assets/js/main.js'),
-        array(), //  dependencies
-        '1.0', //  version
         true //  load in footer
     );
 
@@ -104,14 +97,3 @@ function portfoliotheme_add_custom_image_sizes( $size_names ) {
 	return array_merge( $size_names, $new_sizes );
 }
 add_filter( 'image_size_names_choose', 'portfoliotheme_add_custom_image_sizes' );
-
-// Test
-// add_action( 'wp_footer', function() {
-//     $skills = get_field('skills_list', 12);
-//     if ( $skills ) {
-//         echo '<pre>';
-//         print_r($skills); echo '</pre>';
-//     } else {
-//         echo '<-- No skills found -->'; 
-//     }
-// } );

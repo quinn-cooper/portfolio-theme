@@ -7,7 +7,7 @@ Description: A theme for a web portfolio.
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.4
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: portfolio-theme
@@ -19,16 +19,16 @@ Update URI: false
 NAV MENU
 ---------------------------- */
 
-@media (max-width: 37.4375rem) {
+@media (max-width: 37.4375em) {
     .wp-block-navigation__responsive-close {
         background-color: #131a46;
         color: #c5a4a0;
         display: flex;
         gap: 1.3rem;
         justify-content: flex-end;
-        padding: 4rem;
+        padding: 3rem;
         border-radius: 0 0 15px 160px;
-        margin: 3rem;
+        margin: 0 3rem 2rem 3rem;
     }
 }
 
@@ -57,6 +57,32 @@ h1::after {
 
 h1:hover::after {
     width: 100%;
+}
+
+/* ----------------------------
+TYPEWRITER EFFECT
+---------------------------- */
+/* source: https://css-tricks.com/snippets/css/typewriter-effect */
+
+.wp-block-heading.has-custom-background-color.has-text-color.has-link-color,
+.wp-block-heading.web-designer-text.has-custom-background-color.has-text-color.has-link-color {
+    overflow: hidden;
+    border-right: .1em solid #131a46;
+    white-space: nowrap;
+    letter-spacing: 0;
+    animation: 
+        typing 2s steps(20, jump-start) forwards, 
+        blink-caret .75s step-end 6 forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 10ch }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #131a46; }
 }
 
 /* ----------------------------
@@ -102,19 +128,23 @@ BUTTONS
 PROJECTS
 ---------------------------- */
 
-figure.wp-block-gallery.has-nested-images {
+figure.wp-block-gallery.has-nested-images,
+.wp-container-core-group-is-layout-fa39a2c3 {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 42.2em) {
-    figure.wp-block-gallery.has-nested-images {
+    figure.wp-block-gallery.has-nested-images,
+    .wp-container-core-group-is-layout-fa39a2c3 {
         flex-direction: row;
     }
 }
 
 @media (max-width: 42.0625em) {
-    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image),
+    .wp-block-image.has-custom-border img.wp-image-570,
+    .wp-block-image.has-custom-border img.wp-image-569 {
         width: 100%;
     }
 }
